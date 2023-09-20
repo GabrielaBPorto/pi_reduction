@@ -15,3 +15,6 @@ def display_image(img):
     cv2.imshow('Image', img)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
+
+def write_image(image, outputFilename):
+    cv2.imwrite(outputFilename, image)
